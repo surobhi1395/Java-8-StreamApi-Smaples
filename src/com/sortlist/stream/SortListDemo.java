@@ -20,9 +20,9 @@ public class SortListDemo {
         System.out.println("Sorted List in Descending Order: " + list);
 
         // sorting using stream in ascending order
-        // list.stream().sorted().forEach(s->System.out.println(s));
+         list.stream().sorted().forEach(s->System.out.println(s));
         // descending order using stream
-        // list.stream().sorted(Comparator.reverseOrder()).forEach(s->System.out.println(s));
+         list.stream().sorted(Comparator.reverseOrder()).forEach(s->System.out.println(s));
 
         // retrieving the list of employees on the basis of salary
         List<Employee> employeeList = EmployeeDao.getAllEmp();
