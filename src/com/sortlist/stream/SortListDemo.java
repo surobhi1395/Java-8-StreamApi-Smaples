@@ -37,6 +37,10 @@ public class SortListDemo {
         // with lambda
         Collections.sort(employeeList, (o1, o2) -> (int) (o2.getSalary()- o1.getSalary()));
         System.out.println(employeeList);
+
+        // with stream
+        employeeList.stream().sorted((o1, o2) -> (int) (o2.getSalary()- o1.getSalary()))
+                .forEach(System.out::println);
     }
 
 
