@@ -33,6 +33,9 @@ public class SortListDemo {
                 return (int) (o2.getSalary()- o1.getSalary()); // descending order
             }
         });
+
+        // with lambda
+        Collections.sort(employeeList, (o1, o2) -> (int) (o2.getSalary()- o1.getSalary()));
         System.out.println(employeeList);
     }
 
